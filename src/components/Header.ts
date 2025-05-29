@@ -1,8 +1,8 @@
 import { LitElement, html, css } from "lit";
 import { customElement } from "lit/decorators.js"
 
-@customElement("om-button")
-export class Button extends LitElement {
+@customElement("om-header")
+export class OmHeader extends LitElement {
     static styles = [
         css`
             :host {
@@ -14,13 +14,13 @@ export class Button extends LitElement {
 
     render() {
         return html`
-        <h2 type="button" class="p-4 text-lg font-medium">My Header</h2>
+        <h2 class="p-4 text-lg font-medium">My Header</h2>
         `;
     }
 }
 
 declare global {
     interface HTMLElementTagNameMap {
-        "om-header": Button;
+        "om-header": OmHeader;
     }
 }
