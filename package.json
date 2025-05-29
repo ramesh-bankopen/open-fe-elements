@@ -1,0 +1,33 @@
+{
+  "name": "open-fe-elements",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,js --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,js --fix",
+    "format": "prettier --write \"src/**/*.{ts,js,css,scss,html,md,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,css,scss,html,md,json}\"",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lit": "^3.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@unocss/preset-attributify": "^66.1.2",
+    "@unocss/preset-typography": "^66.1.2",
+    "@unocss/preset-uno": "^66.1.2",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "^3.5.3",
+    "sass": "^1.89.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.33.0",
+    "unocss": "^66.1.2",
+    "vite": "^6.3.5"
+  }
+}
